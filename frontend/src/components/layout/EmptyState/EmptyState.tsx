@@ -60,7 +60,8 @@ const EmptyStateForChannel = ({ channelData }: EmptyStateForChannelProps) => {
             </Flex>
             {channelData?.is_archived == 0 && isAdmin && <Flex gap='4' className={'z-1'}>
                 <EditDescriptionButton channelData={channelData} />
-                {channelData?.type !== 'Open' && <AddMembersButton channelData={channelData} />}
+                {/* CUSTOMIZED: Hide Add Member Button */}
+                {/* {channelData?.type !== 'Open' && <AddMembersButton channelData={channelData} />} */}
             </Flex>}
         </Flex>
     )

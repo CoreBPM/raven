@@ -76,14 +76,14 @@ const ChannelHeaderMenu = ({ channelData }: Props) => {
                 </DropdownMenu.Item> */}
                 {channelData.is_direct_message === 0 && <>
                     <DropdownMenu.Separator />
-                    {canAddMembers &&
+                    {/* {canAddMembers &&
                         <DropdownMenu.Item onClick={onAddMembersOpen}>
                             <Flex gap='2' align='center'>
                                 <TbUsersPlus size={ICON_SIZE} />
                                 Add Members
                             </Flex>
                         </DropdownMenu.Item>
-                    }
+                    } */}
 
                     <DropdownMenu.Item onClick={onChannelDetailsOpen}>
                         <Flex gap='2' align='center'>
@@ -119,4 +119,4 @@ const ChannelHeaderMenu = ({ channelData }: Props) => {
     )
 }
 
-export default ChannelHeaderMenu
+export default ChannelHeaderMenu 

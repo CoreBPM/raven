@@ -120,8 +120,9 @@ const MemberList = ({ channelData, channelMembers, activeUsers, updateMembers, i
                                     </Flex>
                                 </Flex>
                                 {/* if current user is a channel member and admin they can remove users other than themselves if the channel is not open */}
-                                {channelMembers[currentUser] &&
-                                    isCurrentUserAdmin &&
+                                {/* {channelMembers[currentUser] &&
+                                    channelMembers[currentUser].is_admin === 1 &&
+                                    member.name !== currentUser &&
                                     channelData?.type !== 'Open' && channelData.is_archived == 0 &&
                                     <Flex align="center">
                                         <UserActionsMenu
@@ -129,7 +130,7 @@ const MemberList = ({ channelData, channelMembers, activeUsers, updateMembers, i
                                             updateMembers={updateMembers}
                                             selectedMember={member} />
                                     </Flex>
-                                }
+                                } */}
                             </Flex>
                         </Box>
                     ))}

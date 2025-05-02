@@ -51,7 +51,8 @@ export const ChannelList = ({ channels }: ChannelListProps) => {
                         <SidebarGroupLabel>{__("Channels")}</SidebarGroupLabel>
                     </Flex>
                     <Flex align='center' gap='1'>
-                        <CreateChannelButton />
+                        {/* CUSTOMIZED: Hide CREATE CHANNEL Button */}
+                        {/* <CreateChannelButton /> */}
                         <ChannelListActions />
                         <SidebarViewMoreButton onClick={toggle} expanded={showData} />
                     </Flex>

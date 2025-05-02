@@ -83,28 +83,28 @@ const ViewChannelDetailsModalContent = ({ setOpen, channelData }: ViewChannelDet
                 </Flex>
             </Dialog.Title>
 
-            <Tabs.Root defaultValue="About">
+            <Tabs.Root defaultValue="Members">
                 <Flex direction={'column'} gap='4'>
                     <Tabs.List>
-                        <Tabs.Trigger value="About">About</Tabs.Trigger>
+                        {/* <Tabs.Trigger value="About">About</Tabs.Trigger> */}
                         <Tabs.Trigger value="Members">
                             <Flex gap='2'>
                                 <Text>Members</Text>
                                 <Text>{memberCount}</Text>
                             </Flex>
                         </Tabs.Trigger>
-                        <Tabs.Trigger value="Settings">Settings</Tabs.Trigger>
+                        {/* <Tabs.Trigger value="Settings">Settings</Tabs.Trigger> */}
                     </Tabs.List>
                     <Box>
-                        <Tabs.Content value="About">
+                        {/* <Tabs.Content value="About">
                             <ChannelDetails channelData={channelData} channelMembers={channelMembers} onClose={onClose} />
-                        </Tabs.Content>
+                        </Tabs.Content> */}
                         <Tabs.Content value="Members">
                             <ChannelMemberDetails channelData={channelData} channelMembers={channelMembers} activeUsers={activeUsers} updateMembers={updateMembers} />
                         </Tabs.Content>
-                        <Tabs.Content value="Settings">
+                        {/* <Tabs.Content value="Settings">
                             <ChannelSettings channelData={channelData} onClose={onClose} allowSettingChange={allowSettingChange} />
-                        </Tabs.Content>
+                        </Tabs.Content> */}
                     </Box>
                 </Flex>
             </Tabs.Root>
